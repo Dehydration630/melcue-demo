@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1570" viewBox="0 0 1120 1570" role="img" aria-labelledby="title desc"><title id="title">MelCue 产品架构：对话、上下文、任务与投递分离</title><desc id="desc">产品职责图，区分本机实现与云QA。网页接入FastAPI，交流目标、对象与记忆支持回复和行动计划。回复与后台任务分开，后台通过模型适配和媒体处理能力执行，结果经有效性校验再投递。PG与TOS保存业务和媒体，本机SQLite。完整云跟唱仍需GPU条件和音色用途许可。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" fill="none" stroke="#8b829e" stroke-width="1.5"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#292538}.line{fill:none;stroke:#8b829e;stroke-width:1.8;marker-end:url(#arrow)}</style></defs><rect width="1120" height="1570" rx="24" fill="#f8f7fc"/>
+<text x="36" y="51" font-size="31" font-weight="700" style="fill:#292538">MelCue · 乐话｜产品架构</text>
+<text x="36" y="90" font-size="22" font-weight="400" style="fill:#5e566e">理解与表达、实际工作、结果投递分别管理</text>
+<rect x="814" y="26" width="268" height="40" rx="16" fill="#eee8ff" stroke="#eee8ff"/>
+<text x="835" y="53" font-size="18" font-weight="400" style="fill:#65458a">本机实现 + 云 QA · 职责图</text>
+<rect x="28" y="120" width="1064" height="120" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="50" y="156" font-size="22" font-weight="650" style="fill:#30263e">交互入口 · 响应式网页 / HTML · CSS · JavaScript</text>
+<text x="50" y="190" font-size="21" font-weight="400" style="fill:#5e566e">聊天 / 作品库 / 素材 / 歌词本 / 反馈；语音输入、语音播放与背景音乐避让</text>
+<text x="50" y="219" font-size="21" font-weight="400" style="fill:#5e566e">HTTPS + 邀请码；当前云 QA 使用 veFaaS，正式运行条件仍待落实</text>
+<path d="M373 240V268" class="line"/>
+<rect x="28" y="278" width="690" height="924" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="52" y="321" font-size="26" font-weight="650" style="fill:#30263e">对话与任务编排</text>
+<rect x="52" y="343" width="642" height="98" rx="16" fill="#f3f0ff" stroke="#e0d9f4"/>
+<text x="74" y="379" font-size="22" font-weight="650" style="fill:#30263e">FastAPI · 业务入口与权限</text>
+<text x="74" y="413" font-size="20" font-weight="400" style="fill:#5e566e">身份与资源归属 / 上传登记 / 请求关联 / 当前轮次</text>
+<path d="M373 441V464" class="line"/>
+<rect x="52" y="474" width="642" height="120" rx="16" fill="#f3f0ff" stroke="#e0d9f4"/>
+<text x="74" y="510" font-size="22" font-weight="650" style="fill:#30263e">上下文管理 · 目标、对象、记忆分开</text>
+<text x="74" y="544" font-size="20" font-weight="400" style="fill:#5e566e">一级场景 + 二级活动 / 当前歌曲、素材与版本</text>
+<text x="74" y="573" font-size="20" font-weight="400" style="fill:#5e566e">作品记忆 / 待聊话题 / 歌词本：按相关性取用</text>
+<path d="M373 594V617" class="line"/>
+<rect x="52" y="627" width="642" height="90" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="74" y="663" font-size="22" font-weight="650" style="fill:#30263e">回复与行动计划</text>
+<text x="74" y="697" font-size="20" font-weight="400" style="fill:#5e566e">判断如何接话、是否需要工具；计划不等于执行成功</text>
+<path d="M373 717V738H202V757" class="line"/>
+<path d="M373 738H546V757" class="line"/>
+<rect x="52" y="767" width="302" height="144" rx="16" fill="#fff0f5" stroke="#e8c6d4"/>
+<text x="74" y="803" font-size="22" font-weight="650" style="fill:#30263e">对话投递</text>
+<text x="74" y="837" font-size="18" font-weight="400" style="fill:#5e566e">自然分条 / 篇幅与语气</text>
+<text x="74" y="866" font-size="18" font-weight="400" style="fill:#5e566e">新消息优先 / 可停止</text>
+<text x="74" y="895" font-size="18" font-weight="400" style="fill:#5e566e">语音与输入互相避让</text>
+<rect x="392" y="767" width="302" height="144" rx="16" fill="#fff2ec" stroke="#edcfc1"/>
+<text x="414" y="803" font-size="22" font-weight="650" style="fill:#30263e">后台持久任务</text>
+<text x="414" y="837" font-size="18" font-weight="400" style="fill:#5e566e">准备 / 执行 / 成功 / 失败</text>
+<text x="414" y="866" font-size="18" font-weight="400" style="fill:#5e566e">预算预留 / 幂等 / 重试</text>
+<text x="414" y="895" font-size="18" font-weight="400" style="fill:#5e566e">Outbox + Worker 调度</text>
+<path d="M546 911V940" class="line"/>
+<rect x="52" y="950" width="642" height="120" rx="16" fill="#f3f0ff" stroke="#e0d9f4"/>
+<text x="74" y="986" font-size="22" font-weight="650" style="fill:#30263e">结果归属与投递校验</text>
+<text x="74" y="1020" font-size="20" font-weight="400" style="fill:#5e566e">对象版本 / 有效轮次 / 取消与删除 / 已投递记录</text>
+<text x="74" y="1049" font-size="20" font-weight="400" style="fill:#5e566e">结果完成后再决定是否可发送，避免迟到与重复</text>
+<path d="M202 911V930H36V1010H50" class="line"/>
+<path d="M373 1070V1094" class="line"/>
+<rect x="52" y="1104" width="642" height="74" rx="16" fill="#eaf6f1" stroke="#c6e2d7"/>
+<text x="74" y="1140" font-size="22" font-weight="650" style="fill:#30263e">用户可见：消息、状态小字、音频 / 成片与反馈</text>
+<rect x="754" y="278" width="338" height="924" rx="16" fill="#fff7e6" stroke="#ebdfc3"/>
+<text x="777" y="321" font-size="26" font-weight="650" style="fill:#30263e">模型与媒体能力</text>
+<text x="777" y="355" font-size="19" font-weight="400" style="fill:#5e566e">按任务调用，独立处理失败</text>
+<path d="M718 655H744" class="line"/>
+<rect x="776" y="379" width="294" height="136" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="798" y="415" font-size="22" font-weight="650" style="fill:#30263e">理解与表达</text>
+<text x="798" y="449" font-size="17" font-weight="400" style="fill:#5e566e">Qwen Flash：聊天 / 路由</text>
+<text x="798" y="478" font-size="17" font-weight="400" style="fill:#5e566e">Omni Flash：音视频理解</text>
+<text x="798" y="507" font-size="17" font-weight="400" style="fill:#5e566e">Max + 搜索：联网找歌</text>
+<rect x="776" y="524" width="294" height="112" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="798" y="560" font-size="22" font-weight="650" style="fill:#30263e">输入与说话</text>
+<text x="798" y="594" font-size="18" font-weight="400" style="fill:#5e566e">Qwen3-ASR：录音转文字</text>
+<text x="798" y="623" font-size="18" font-weight="400" style="fill:#5e566e">Seed TTS：角色语音</text>
+<rect x="776" y="658" width="294" height="116" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="798" y="694" font-size="22" font-weight="650" style="fill:#30263e">视频粗剪</text>
+<text x="798" y="728" font-size="18" font-weight="400" style="fill:#5e566e">选画面 + 连续音乐片段</text>
+<text x="798" y="757" font-size="18" font-weight="400" style="fill:#5e566e">FFmpeg 渲染 / 存储成片</text>
+<rect x="776" y="797" width="294" height="282" rx="16" fill="#f4effa" stroke="#a68abd" stroke-dasharray="7 5"/>
+<text x="798" y="834" font-size="22" font-weight="650" style="fill:#30263e">原曲短句跟唱</text>
+<text x="798" y="870" font-size="18" font-weight="400" style="fill:#5e566e">Demucs：人声分离</text>
+<text x="798" y="899" font-size="18" font-weight="400" style="fill:#5e566e">原词强制对齐：完整句定位</text>
+<text x="798" y="928" font-size="18" font-weight="400" style="fill:#5e566e">RMVPE：音高分析</text>
+<text x="798" y="957" font-size="18" font-weight="400" style="fill:#5e566e">Seed-VC：音色转换</text>
+<text x="798" y="1002" font-size="17" font-weight="600" style="fill:#85516e">本机已验证；完整云链路待补</text>
+<text x="798" y="1031" font-size="16" font-weight="400" style="fill:#85516e">前提：GPU 条件与音色用途许可</text>
+<text x="778" y="1125" font-size="18" font-weight="400" style="fill:#5e566e">异步结果返回后，先校验再投递</text>
+<text x="778" y="1154" font-size="18" font-weight="400" style="fill:#5e566e">模型推断与原始证据分别记录</text>
+<path d="M373 1202V1232" class="line"/>
+<rect x="28" y="1242" width="1064" height="205" rx="16" fill="#e8f7f2" stroke="#cde8de"/>
+<text x="52" y="1284" font-size="26" font-weight="650" style="fill:#30263e">数据与运行保障</text>
+<rect x="52" y="1305" width="308" height="113" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="74" y="1341" font-size="22" font-weight="650" style="fill:#30263e">PostgreSQL · 云 QA</text>
+<text x="74" y="1375" font-size="18" font-weight="400" style="fill:#5e566e">会话 / 对象 / 任务与记忆</text>
+<text x="74" y="1404" font-size="18" font-weight="400" style="fill:#5e566e">反馈 / 预算账本 / 投递记录</text>
+<rect x="384" y="1305" width="328" height="113" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="406" y="1341" font-size="22" font-weight="650" style="fill:#30263e">私有 TOS 对象存储</text>
+<text x="406" y="1375" font-size="18" font-weight="400" style="fill:#5e566e">原始媒体 / 语音 / Mlog</text>
+<text x="406" y="1404" font-size="18" font-weight="400" style="fill:#5e566e">签名访问 / 删除与封存</text>
+<rect x="736" y="1305" width="332" height="113" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="758" y="1341" font-size="22" font-weight="650" style="fill:#30263e">持久状态与维护</text>
+<text x="758" y="1375" font-size="18" font-weight="400" style="fill:#5e566e">幂等回执 / 日志 / 预算控制</text>
+<text x="758" y="1404" font-size="18" font-weight="400" style="fill:#5e566e">备份恢复 / 到期清理</text>
+<text x="36" y="1486" font-size="18" font-weight="400" style="fill:#5e566e">本机使用 SQLite；云 QA 使用 PostgreSQL + 私有 TOS，不表示全部能力已正式上线。</text>
+<text x="36" y="1517" font-size="18" font-weight="400" style="fill:#5e566e">公开仓库只运行静态预置交互；图中后端、模型、媒体处理与真实用户数据不随 Demo 发布。</text>
+<text x="36" y="1548" font-size="18" font-weight="400" style="fill:#5e566e">运营推广入口为 MVP 保留能力，后续专业角色不纳入当前执行架构。</text>
+</svg>

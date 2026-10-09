@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1530" viewBox="0 0 1000 1530" role="img" aria-labelledby="title desc"><title id="title">MelCue 产品流程：先交流，再自然产生下一步</title><desc id="desc">用户分享作品、素材或日常，系统确认交流目标与对象，先自然回应。作品交流在准备好且话题合适时唱完整句；共同创作一次给一句，认可后存歌词本；视频素材先确认音乐和剪法，用户接受才做Mlog。后台等待可见，结果校验归属，反馈和记忆延续下次交流。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 9 5 1 9" fill="none" stroke="#8b829e" stroke-width="1.5"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;fill:#292538}.line{fill:none;stroke:#8b829e;stroke-width:1.8;marker-end:url(#arrow)}</style></defs><rect width="1000" height="1530" rx="24" fill="#f8f7fc"/>
+<text x="36" y="49" font-size="29" font-weight="700" style="fill:#292538">MelCue · 从认真听见，到自然回应</text>
+<text x="36" y="82" font-size="20" font-weight="400" style="fill:#5e566e">用户不必切换功能模式；小乐围绕当前话题，适时带来下一步</text>
+<rect x="120" y="112" width="760" height="95" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="142" y="148" font-size="22" font-weight="650" style="fill:#30263e">01  分享一首作品、一段日常，或一个念头</text>
+<text x="142" y="182" font-size="20" font-weight="400" style="fill:#5e566e">文字 / 语音 / 音频与歌词 / 图片与视频</text>
+<path d="M500 207V238" class="line"/>
+<rect x="120" y="248" width="760" height="124" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="142" y="284" font-size="22" font-weight="650" style="fill:#30263e">02  理解当前话题，找准这次交流的对象</text>
+<text x="142" y="318" font-size="20" font-weight="400" style="fill:#5e566e">确认交流目标、歌曲或素材版本，按相关性取用记忆</text>
+<text x="142" y="347" font-size="20" font-weight="400" style="fill:#5e566e">作品页上传只自动准备；等用户来聊天，才开启作品交流</text>
+<path d="M500 372V403" class="line"/>
+<rect x="120" y="413" width="760" height="124" rx="16" fill="#fff0f5" stroke="#e8c6d4"/>
+<text x="142" y="449" font-size="22" font-weight="650" style="fill:#30263e">03  先像乐迷一样回应，再判断是否适合行动</text>
+<text x="142" y="483" font-size="20" font-weight="400" style="fill:#5e566e">先聊整体感受，不罗列物品、不机械分析；按对话意图控制篇幅</text>
+<text x="142" y="512" font-size="20" font-weight="400" style="fill:#5e566e">日常继续聊；寻找外部曲目时，按具体共同特点进入音乐推荐</text>
+<path d="M500 537V561H178V584" class="line"/>
+<path d="M500 561V584" class="line"/>
+<path d="M500 561H822V584" class="line"/>
+<rect x="34" y="594" width="288" height="156" rx="16" fill="#f1edff" stroke="#d8cff0"/>
+<text x="56" y="630" font-size="22" font-weight="650" style="fill:#30263e">作品交流 · 跟唱</text>
+<text x="56" y="664" font-size="18" font-weight="400" style="fill:#5e566e">自然聊到具体歌词</text>
+<text x="56" y="693" font-size="18" font-weight="400" style="fill:#5e566e">匹配原曲完整演唱单元</text>
+<text x="56" y="722" font-size="18" font-weight="400" style="fill:#5e566e">已对齐 + 当前话题合适</text>
+<path d="M178 750V775" class="line"/>
+<rect x="356" y="594" width="288" height="156" rx="16" fill="#fff2ec" stroke="#edcfc1"/>
+<text x="378" y="630" font-size="22" font-weight="650" style="fill:#30263e">共同创作 · 歌词本</text>
+<text x="378" y="664" font-size="18" font-weight="400" style="fill:#5e566e">讨论方向后主动给一句</text>
+<text x="378" y="693" font-size="18" font-weight="400" style="fill:#5e566e">听用户反馈，再修改</text>
+<text x="378" y="722" font-size="18" font-weight="400" style="fill:#5e566e">获得认可后才保存</text>
+<path d="M500 750V775" class="line"/>
+<rect x="678" y="594" width="288" height="156" rx="16" fill="#eaf6f1" stroke="#c6e2d7"/>
+<text x="700" y="630" font-size="22" font-weight="650" style="fill:#30263e">素材交流 · Mlog</text>
+<text x="700" y="664" font-size="18" font-weight="400" style="fill:#5e566e">感受视频，找到可行剪法</text>
+<text x="700" y="693" font-size="18" font-weight="400" style="fill:#5e566e">先选到匹配的连续音乐</text>
+<text x="700" y="722" font-size="18" font-weight="400" style="fill:#5e566e">用户接受邀约或明确要求</text>
+<path d="M822 750V775" class="line"/>
+<rect x="34" y="785" width="288" height="195" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="56" y="821" font-size="22" font-weight="650" style="fill:#30263e">唱完整的一句</text>
+<text x="56" y="855" font-size="18" font-weight="400" style="fill:#5e566e">引用半句，也补齐整句</text>
+<text x="56" y="884" font-size="18" font-weight="400" style="fill:#5e566e">准备慢：先聊，合适时补上</text>
+<text x="56" y="913" font-size="18" font-weight="400" style="fill:#5e566e">不能唱：不假装成功</text>
+<text x="56" y="942" font-size="18" font-weight="400" style="fill:#5e566e">不支持改词或即兴生成</text>
+<rect x="356" y="785" width="288" height="195" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="378" y="821" font-size="22" font-weight="650" style="fill:#30263e">把喜欢的一句留下</text>
+<text x="378" y="855" font-size="18" font-weight="400" style="fill:#5e566e">不反复追问而不产出</text>
+<text x="378" y="884" font-size="18" font-weight="400" style="fill:#5e566e">歌词自然融入聊天</text>
+<text x="378" y="913" font-size="18" font-weight="400" style="fill:#5e566e">未经认可，不自动收藏</text>
+<text x="378" y="942" font-size="18" font-weight="400" style="fill:#5e566e">暂不组合整首歌词</text>
+<rect x="678" y="785" width="288" height="195" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="700" y="821" font-size="22" font-weight="650" style="fill:#30263e">交付启发性的粗剪</text>
+<text x="700" y="855" font-size="18" font-weight="400" style="fill:#5e566e">可用多个画面素材</text>
+<text x="700" y="884" font-size="18" font-weight="400" style="fill:#5e566e">只用一个连续音乐片段</text>
+<text x="700" y="913" font-size="18" font-weight="400" style="fill:#5e566e">状态反差：画面与音乐</text>
+<text x="700" y="942" font-size="18" font-weight="400" style="fill:#5e566e">同时变化，转折同步</text>
+<path d="M178 980V1003H500V1026" class="line"/>
+<path d="M500 980V1026" class="line"/>
+<path d="M822 980V1003H500" class="line"/>
+<rect x="120" y="1036" width="760" height="132" rx="16" fill="#efedff" stroke="#d7d0f2"/>
+<text x="142" y="1072" font-size="22" font-weight="650" style="fill:#30263e">04  后台工作可感知，结果在合适的时候出现</text>
+<text x="142" y="1106" font-size="19" font-weight="400" style="fill:#5e566e">等待用对话间小字；聊天可继续，不靠口头承诺代替真实任务</text>
+<text x="142" y="1131" font-size="19" font-weight="400" style="fill:#5e566e">投递前核对用户、对象、有效轮次与取消 / 删除状态</text>
+<text x="142" y="1156" font-size="19" font-weight="400" style="fill:#5e566e">重复或失效结果不再发送；暂不合适的话题保留待续</text>
+<path d="M500 1168V1198" class="line"/>
+<rect x="120" y="1208" width="760" height="102" rx="16" fill="#eaf6f1" stroke="#c6e2d7"/>
+<text x="142" y="1244" font-size="22" font-weight="650" style="fill:#30263e">05  反馈、修改与记忆，让交流可以继续</text>
+<text x="142" y="1278" font-size="19" font-weight="400" style="fill:#5e566e">喜欢 / 不喜欢 / 修改 / 删除 → 更新有效上下文、作品记忆与待聊线索</text>
+<path d="M500 1310V1340" class="line"/>
+<rect x="120" y="1350" width="760" height="94" rx="16" fill="#fff" stroke="#ded9e8"/>
+<text x="142" y="1386" font-size="22" font-weight="650" style="fill:#30263e">下一次：接住新的分享，也记得尚未展开的话题</text>
+<text x="142" y="1420" font-size="19" font-weight="400" style="fill:#5e566e">主动开场需用户开启；22:00 检查，当天已主动聊过就不再打扰</text>
+<text x="36" y="1480" font-size="18" font-weight="400" style="fill:#5e566e">范围：产品行为说明；核心体验已本机验证，部分云链路已测，完整云跟唱仍待补齐。</text>
+<text x="36" y="1509" font-size="18" font-weight="400" style="fill:#5e566e">公开交互 Demo 仅模拟其中三个场景，不执行图中的模型与媒体任务。</text>
+</svg>

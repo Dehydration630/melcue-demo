@@ -1,5 +1,9 @@
 # 架构：聊天与后台工作怎样协作
 
+![MelCue 产品架构](../assets/product-architecture.svg)
+
+[查看产品流程](../assets/product-flow.svg)
+
 ## 真实产品的概念结构
 
 ```mermaid
