@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {completeUnit,canDeliver,contrastEligible,acceptLine} from '../demo-core.mjs';
+const full='把晚风装进口袋，留一半给明天。';
+const units=[{text:full,aligned:true},{text:'没有定位到的句子',aligned:false}];
+test('short quote expands to full aligned unit',()=>assert.equal(completeUnit('把晚风装进口袋',units).text,full));
+test('punctuation does not truncate unit',()=>assert.equal(completeUnit('口袋 / 留一半',units).text,full));
+test('empty, unknown and unaligned quotes cannot generate a unit',()=>{for(const q of ['', '另一个世界','没有定位到'])assert.equal(completeUnit(q,units),null);});
+const job={epoch:2,work:'a',key:'sing-a'};
+test('current result may deliver',()=>assert.equal(canDeliver(job,{epoch:2,work:'a'},new Set()),true));
+test('stale conversation rejected',()=>assert.equal(canDeliver(job,{epoch:3,work:'a'},new Set()),false));
+test('wrong work rejected',()=>assert.equal(canDeliver(job,{epoch:2,work:'b'},new Set()),false));
+test('duplicate result rejected',()=>assert.equal(canDeliver(job,{epoch:2,work:'a'},new Set(['sing-a'])),false));
+const contrast={videoContrast:true,musicContrast:true,continuousMusic:true,syncOffsetMs:0};
+test('paired synchronous contrast accepted',()=>assert.equal(contrastEligible(contrast),true));
+test('each missing contrast condition blocks delivery',()=>{for(const key of ['videoContrast','musicContrast','continuousMusic'])assert.equal(contrastEligible({...contrast,[key]:false}),false);});
+test('unsynced transition rejected in either direction',()=>{for(const n of [101,-101])assert.equal(contrastEligible({...contrast,syncOffsetMs:n}),false);});
+test('lyrics save requires approval',()=>{assert.equal(acceptLine(full,false),null);assert.equal(acceptLine(full,true),full);});

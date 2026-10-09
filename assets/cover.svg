@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+<title id="title">MelCue 乐话：你写的歌，有人放在心上。</title><desc id="desc">音乐人的 AI 乐迷与陪伴助手。右侧为虚构对话和跟唱卡片示意，不含真实音频。</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#211922"/><stop offset="1" stop-color="#0c101b"/></linearGradient><linearGradient id="pink"><stop stop-color="#f09ab5"/><stop offset="1" stop-color="#dcc0f2"/></linearGradient></defs>
+<rect width="1280" height="520" rx="24" fill="url(#bg)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+<rect x="52" y="46" width="48" height="48" rx="14" fill="url(#pink)"/>
+<path d="M76 81C61 72 59 66 64 61C68 57 73 60 76 64C79 60 84 57 88 61C94 68 88 74 76 81Z" fill="#281826"/>
+<text x="115" y="80" font-size="31" font-weight="750" fill="#fff5fa">MelCue<tspan font-size="20" font-weight="400" fill="#c4b9cc"> / 乐话</tspan></text>
+<text x="55" y="144" font-size="11" letter-spacing="2.3" fill="#f1b6ca">AI PRODUCT MANAGEMENT · FEATURED PROJECT</text>
+<text x="52" y="220" font-size="55" font-weight="750" fill="#fff5fa">你写的歌，</text>
+<text x="52" y="287" font-size="55" font-weight="750" fill="#fff5fa">有人放在心上。</text>
+<text x="55" y="329" font-size="21" fill="#c8bdd0">音乐人的 AI 乐迷与陪伴助手。</text>
+<rect x="53" y="373" width="238" height="51" rx="26" fill="url(#pink)"/>
+<text x="82" y="406" font-size="20" font-weight="650" fill="#241827">体验交互 Demo</text><path d="M254 405l13-13m-13 0h13v13" stroke="#241827" stroke-width="2.5" fill="none"/>
+<text x="55" y="476" font-size="13" fill="#9b8ea9">需求取舍 / 对话体验 / 模型评测 / Agent 交付</text>
+<rect x="694" y="45" width="534" height="397" rx="22" fill="#171622" stroke="#393044"/>
+<circle cx="718" cy="69" r="4" fill="#f1a7bd"/><circle cx="734" cy="69" r="4" fill="#c9b0e0"/><circle cx="750" cy="69" r="4" fill="#93b6ae"/>
+<text x="777" y="74" fill="#a89ab9" font-size="10" letter-spacing="2">LISTEN · REMEMBER · CREATE</text>
+<text x="722" y="110" fill="#f5e6f3" font-size="18" font-weight="650">小乐 · 你的 AI 乐迷</text>
+<rect x="914" y="130" width="283" height="45" rx="14" fill="#433346"/><text x="933" y="159" fill="#f5e6f3" font-size="17">听听我新写的歌怎么样？</text>
+<rect x="722" y="191" width="450" height="85" rx="14" fill="#24202f"/><text x="741" y="221" fill="#e9deef" font-size="17">像一天忙完，终于走上回家的路。</text><text x="741" y="250" fill="#e9deef" font-size="17">是慢慢松了一口气的感觉。</text>
+<rect x="722" y="292" width="450" height="106" rx="15" fill="#2e2438" stroke="#654661"/>
+<text x="741" y="319" fill="#f6bed2" font-size="14">♪ 这一句，唱给你听</text><text x="741" y="346" fill="#eee2f3" font-size="16">把晚风装进口袋，留一半给明天。</text>
+<path d="M743 371h3m5-5v10m7-16v23m7-17v10m7-23v36m7-31v26m7-20v15m7-20v22m7-14v7m7-2h9" stroke="#ddabc5" stroke-width="3" stroke-linecap="round"/>
+<text x="1007" y="378" fill="#ab96b5" font-size="10">CONCEPT PREVIEW</text>
+<text x="700" y="476" font-size="13" fill="#9b8ea9">原创图形示意 · 虚构对话 · 无模型调用与真实歌声</text>
+</g></svg>
